@@ -1,0 +1,8 @@
+#cloud-config
+users:
+  - name: egor
+    groups: wheel, users
+    shell: /bin/bash
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+    ssh_authorized_keys:
+      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGuzGs8+CDJj9t2XSMgWzDAsTaeLurVMP6+ED2eP+PwU
